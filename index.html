@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>قصص الأنبياء - قصة نبي موسى</title>
+<meta name="description" content="موقع قصص الأنبياء، قصص نبي موسى عليه السلام ومعجزاته، شق البحر وقصص هادفة للأطفال والكبار.">
+<meta name="keywords" content="قصص الأنبياء, نبي موسى, شق البحر, قصص دينية, قصة يوسف, قصة محمد">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Arial, sans-serif; background:#f2f2f2; margin:0; padding:0; line-height:1.8; }
+header { background:#0a3d62; color:white; padding:20px; text-align:center; }
+.container { max-width:900px; margin:20px auto; background:white; padding:25px; border-radius:8px; }
+h1,h2,h3 { color:#0a3d62; }
+.article-list { list-style:none; padding:0; margin-bottom:30px; }
+.article-list li { margin-bottom:15px; }
+.article-list a { text-decoration:none; color:#0a3d62; font-weight:bold; }
+.article-list a:hover { text-decoration:underline; }
+.ad-space { 
+  margin:30px 0; 
+  text-align:center; 
+  background:#fffbe6; 
+  border:1px solid #f1c40f; 
+  padding:15px; 
+  color:#555; 
+  border-radius:6px;
+  font-size:15px;
+}
+footer { background:#0a3d62; color:#ddd; text-align:center; padding:15px; font-size:14px; margin-top:30px; }
+#visitor-counter { text-align:center; margin:20px; font-weight:bold; font-size:18px; color:#0a3d62; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>قصص الأنبياء</h1>
+  <p>مقالات هادفة وعبر من حياة الأنبياء عليهم السلام</p>
+</header>
+
+<div class="container">
+
+<h2>قائمة المقالات</h2>
+<ul class="article-list">
+  <li><a href="#musa">قصة نبي موسى عليه السلام</a></li>
+</ul>
+
+<!-- مقال نبي موسى -->
+<h2 id="musa">قصة نبي موسى عليه السلام ومعجزته شق البحر</h2>
+
+<div class="ad-space">إعلان هنا</div>
+
+<p>نبي الله موسى عليه السلام هو أحد أعظم الأنبياء، أرسله الله لهداية بني إسرائيل ومواجهة فرعون الظالم.</p>
+
+<h3>ولادته ومحنة الطفولة</h3>
+<p>ولد موسى عليه السلام في زمن اضطهاد فرعون، وكان فرعون يأمر بقتل الأطفال الذكور من بني إسرائيل، فأوكل الله حمايته إلى والدته.</p>
+
+<div class="ad-space">إعلان هنا</div>
+
+<h3>دعوة فرعون ومعجزاته</h3>
+<p>بعث الله موسى بدعوة فرعون، وأيده بالمعجزات مثل العصا والثعبان، لكن فرعون رفض الانصياع.</p>
+
+<div class="ad-space">إعلان هنا</div>
+
+<h3>شق البحر والهروب من فرعون</h3>
+<p>عندما فرّ موسى وبني إسرائيل من مصر، لاحقهم فرعون وجنوده. فبأمر الله، شق موسى البحر بعصاه، ونجا هو وبني إسرائيل، وغرق فرعون وجنوده.</p>
+
+<div class="ad-space">إعلان هنا</div>
+
+<div id="visitor-counter">عدد زياراتك لهذا الموقع: 0</div>
+
+</div>
+
+<footer>
+  © 2025 موقع قصص الأنبياء – جميع الحقوق محفوظة
+</footer>
+
+<script>
+// عداد زيارات الجهاز فقط
+let visits = localStorage.getItem('mySiteVisits');
+if(!visits) visits = 0;
+visits = parseInt(visits) + 1;
+document.getElementById('visitor-counter').innerText = 'عدد زياراتك لهذا الموقع: ' + visits;
+localStorage.setItem('mySiteVisits', visits);
+</script>
+
+</body>
+</html>
