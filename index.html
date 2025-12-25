@@ -75,13 +75,24 @@ footer { background:#0a3d62; color:#ddd; text-align:center; padding:15px; font-s
 </footer>
 
 <script>
-// عداد زيارات الجهاز فقط
+// عداد زيارات هذا الجهاز فقط
 let visits = localStorage.getItem('mySiteVisits');
-if(!visits) visits = 0;
+if (!visits) visits = 0;
 visits = parseInt(visits) + 1;
-document.getElementById('visitor-counter').innerText = 'عدد زياراتك لهذا الموقع: ' + visits;
+document.getElementById('visitor-counter').innerText =
+  'عدد زياراتك لهذا الموقع: ' + visits;
 localStorage.setItem('mySiteVisits', visits);
 </script>
+
+<script>
+// عداد جميع زوار الموقع (GitHub Pages)
+fetch("https://api.countapi.xyz/hit/brouman52-web/my-site")
+  .then(res => res.json())
+  .then(data => {
+    console.log("عدد جميع زوار الموقع:", data.value);
+  });
+</script>
+
 
 </body>
 </html>
